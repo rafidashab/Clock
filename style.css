@@ -7,12 +7,17 @@
   /* padding-bottom: 31%; this was messing everything up*/
   position: relative;
   width: 40em;
-  margin-top: 30px;
-  margin-left: 30px;
+  
+  /* 
+  margin-left: 30px; */
+
+  margin: auto;
+  margin-top: 100px;
+
 }
 
 html {
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 body {
@@ -97,29 +102,3 @@ body {
   width: 1%;
   z-index: 8;
 }
-
-
-@keyframes rotate {
-  100% {
-    transform: rotateZ(360deg);
-    /* rotate the z axis by 360 deg */
-  }
-}
-
-.hours-container {
-  animation: rotate 43200s infinite linear;
-  /* background-color: blue; */
-}
-.minutes-container {
-  animation: rotate 3600s infinite linear;
-  /* background-color: green; */
-}
-.seconds-container {
-  animation: rotate 60s infinite linear;
-  /* transform : rotatez(90deg); */
-  /* background-color: orange; */
-  /* instead of linear we can use step(60) for quartz movement*/
-}
-
-/* this are making the containers spin */
-/* I am gonna position the containers according to the time and date */
